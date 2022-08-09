@@ -1,0 +1,99 @@
+1. create project.
+2. install json-server npm i -g json-server
+3. copy and paste bootstrap cdn. 
+4. create Employee Dashboard component. 
+  5. create a navbar in Employee dashboard component.
+6. create a table below the navbar. (assign bootstrap class "table " to the table.
+7. assign bootstrap classes to the buttons Edit and delete. 
+8. create a bootstrap  modal on Add Employee button.
+ 9. create a form inside the model body and modify according to the need. .
+10.  after creating form, we have to bind the all form input details to server
+     so that after clicking add button, the details will be posted to json-server. 
+11. using reactive forms to bind all the form inputs to the server. 
+12. import form builder and form group.
+13. name the form as "form value " . 
+14. inject formbuilder in the constructor.
+15 add all the form controls. 
+16. import ReactiveFormsModule.
+17. create json-server to post form input data.
+  Run json-server --watch db.json  to run json-server
+18. now the input data is posted to json-server. 
+  19. now create four apis put, post, update, delete .
+20 . create api service in shared folder. 
+     we will call all apis in the api.service.ts .
+21. for api calls, import HttpClient in api.service.ts and import httpClient. 
+22. inject HttpClient in the consctructor of api.service.ts  
+  (note: we call all api e.g post,put,get,update in service.file,
+      we call api in service ). 
+   23. now create employee.dashboard.model. so we can create an object and pass the data.
+   24. creating EmplyeemodelObject in component.ts file  and importing it in 
+component.ts file
+  25. for posting data, create postEmployeeDetails method and add all form values in the object employeeModelObj. 
+26. now post data using postEmployee api .
+ 27. to remove the error "parameter "err impicitly has an any type
+     write    1. "noImplicitAny": false, 
+               2.     //"noImplicitReturns": true,   in ts.config.json file. 
+   and restart the project by using ngserve. 
+   28. now apply  postEmployeeDetails() method on Add button . 
+         29. resting the form after adding form details;
+30.         let ref = document.getElementById('cancel'); used to automatically close the form after adding details. 
+  31. creating Employeedata property   .
+32.    <!-- using ngFor to dispolay Employee data details -->
+33.       <!-- using string interpolation to display data.  -->
+ 34. calling getAllEmployee() in the ngon it. 
+  35. creating delete Employee method and calling delete Employee api in this method. 
+   36. creating on Edit method method and calling it on the Edit button.
+  37.   creating  updateEmployeeDetails() method  (    // calling update Employee api in the update Employee method ). 
+   38. create ClickAdd Employee and show and hide add and update buttons. 
+    //when edit Employee, show update button and hide add  buttons on edit and adding details.
+
+         // create login and sign up pages.
+
+  39. create login and sign up components. 
+   40. create routing for login and sign up components in routing.module.ts. 
+41. if path is blank , redirect it to login component. 
+          { path: '', redirectTo: 'login', pathMatch: 'full' },
+  42. create a login page using bootstrap form. 
+43. do the css of login component. 
+44.   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); it shifts login form in the center. 
+
+ 45. <a routerLink="/signup">New User ? Click to signup</a> it moves user to sign up page from the login use if there is new user. 
+              routerlink is used to move from one component to another. 
+
+46.    create   "signupUsers": [] array in db.json and store all sign up users in this array. 
+47. use reactive forms to name the form, initiliaze the form and bind all the form controls. (use form builder to group the form ). 
+ 48.           <!-- after submitting form, ngSubmit = signup() method will trigger -->
+48. create signup() method to post form data on json.server using http calls. (use Http Client for api calls). 
+49.     after successfull sign in, redirecting the user to login page.
+50.  same import form builder and form group for the login page, create login form name, initiliaze the form builder in the constructor.
+           and group the form in the ngonit. . 
+51. create the login method and put a condition in this method whether the user email, password matches..??
+         if email, password matches, navigate the user to the dashboard. . 
+52. create a logout button on the dashboard, this logout button will redirect the user to the login page. 
+    
+                 //Reactive Forms Validation: 
+53. import Validators and use  email: ['', Validators.required] in the input fields. 
+54.    <span
+            class="text-danger"
+            *ngIf="
+              loginForm.controls['password'].dirty &&
+              loginForm.hasError('required', 'password')
+            "
+          >
+            Password is required
+          </span>      (used to show password required text on the condition ). 
+55.   [disabled]="!loginForm.valid"  disabling the login button if input fields are empty. 
+56.       <!-- [disabled]="!signupForm.valid"   -->
+          <!-- you can use this to disable signup button -->   
+  
+ 
+. 
+
+ 
+
+
+     
+
+
