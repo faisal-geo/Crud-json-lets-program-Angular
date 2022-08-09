@@ -13,6 +13,85 @@
       "postId": 1
     }
   ],
+  "signupUsers": [
+    {
+      "fullname": "sd",
+      "email": "faisalkaleem1990@gmail.com",
+      "password": "5353",
+      "mobile": 4535,
+      "id": 1
+    },
+    {
+      "fullname": "dd",
+      "email": "faisalkaleem1990@gmail.com",
+      "password": "fdgfd",
+      "mobile": 43634,
+      "id": 2
+    },
+    {
+      "fullname": "sd",
+      "email": "faisalkaleem1990@gmail.com",
+      "password": "123",
+      "mobile": 3310385836,
+      "id": 3
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 4
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 5
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 6
+    },
+    {
+      "fullname": "sd",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 7
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": "",
+      "id": 8
+    },
+    {
+      "fullname": "sd",
+      "email": "faisalkaleem1990@gmail.com",
+      "password": "fh",
+      "mobile": 3310385836,
+      "id": 9
+    },
+    {
+      "fullname": "",
+      "email": "nbnb",
+      "password": "b b",
+      "mobile": "",
+      "id": 10
+    },
+    {
+      "fullname": "",
+      "email": "",
+      "password": "",
+      "mobile": null,
+      "id": 11
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
